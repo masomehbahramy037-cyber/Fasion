@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>فروشگاه لباس زنانه</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: 'Vazirmatn', sans-serif; direction: rtl; }
+  </style>
+</head>
+<body class="bg-pink-50 text-slate-900">
+
+  <header class="sticky top-0 bg-white/80 backdrop-blur-md border-b z-50">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="text-2xl font-bold text-pink-600">FashionLady</div>
+      <nav class="hidden md:flex gap-6 text-sm">
+        <a href="#products" class="hover:text-pink-500">محصولات</a>
+        <a href="#about" class="hover:text-pink-500">درباره</a>
+        <a href="#contact" class="hover:text-pink-500">تماس</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="bg-gradient-to-r from-pink-200 to-pink-100 py-16 text-center">
+    <h1 class="text-3xl md:text-4xl font-extrabold text-pink-700">
+      جدیدترین کلکسیون لباس زنانه ۲۰۲۵
+    </h1>
+    <p class="mt-4 text-slate-600">
+      خرید آنلاین لباس‌های شیک، راحت و به‌روز با ارسال سریع.
+    </p>
+    <a href="#products" class="inline-block mt-6 bg-pink-500 hover:bg-pink-600 text-white px-6 py-3 rounded-md">
+      مشاهده محصولات
+    </a>
+  </section>
+
+  <section id="products" class="max-w-6xl mx-auto px-6 py-12">
+    <h2 class="text-2xl font-bold text-pink-700 mb-6 text-center">محصولات پرطرفدار</h2>
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div class="bg-white rounded-xl shadow overflow-hidden">
+        <img src="https://picsum.photos/400/400?1" alt="پیراهن" class="w-full h-64 object-cover">
+        <div class="p-4">
+          <div class="font-semibold">پیراهن گل‌دار</div>
+          <div class="text-pink-600 mt-1">۸۹۹٬۰۰۰ تومان</div>
+          <button class="mt-3 w-full bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded-md">افزودن به سبد</button>
+        </div>
+      </div>
+      <div class="bg-white rounded-xl shadow overflow-hidden">
+        <img src="https://picsum.photos/400/400?2" alt="مانتو" class="w-full h-64 object-cover">
+        <div class="p-4">
+          <div class="font-semibold">مانتو تابستانی</div>
+          <div class="text-pink-600 mt-1">۱٬۲۹۹٬۰۰۰ تومان</div>
+          <button class="mt-3 w-full bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded-md">افزودن به سبد</button>
+        </div>
+      </div>
+      <div class="bg-white rounded-xl shadow overflow-hidden">
+        <img src="https://picsum.photos/400/400?3" alt="شلوار" class="w-full h-64 object-cover">
+        <div class="p-4">
+          <div class="font-semibold">شلوار جین زنانه</div>
+          <div class="text-pink-600 mt-1">۶۹۹٬۰۰۰ تومان</div>
+          <button class="mt-3 w-full bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded-md">افزودن به سبد</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="bg-white py-12">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h3 class="text-xl font-semibold text-pink-700">درباره FashionLady</h3>
+      <p class="mt-4 text-slate-600">
+        ما با هدف ارائهٔ بهترین تجربهٔ خرید آنلاین لباس زنانه فعالیت می‌کنیم.
+        تمامی محصولات ما اصل و با ضمانت بازگشت وجه هستند.
+      </p>
+    </div>
+  </section>
+
+  <section id="contact" class="bg-pink-100 py-12">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h3 class="text-xl font-semibold text-pink-700">در خبرنامه عضو شوید</h3>
+      <p class="mt-2 text-slate-600">تخفیف‌ها و جدیدترین محصولات را در ایمیلتان دریافت کنید</p>
+      <form class="mt-6 flex flex-col sm:flex-row justify-center gap-3">
+        <input
+          type="email"
+          placeholder="ایمیل شما"
+          class="p-3 rounded-md border w-full sm:w-80"
+        />
+        <button class="bg-pink-500 hover:bg-pink-600 text-white px-6 py-3 rounded-md">ثبت</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="bg-white border-t py-6 text-center text-sm text-slate-600">
+    © <span id="year"></span> FashionLady — همه حقوق محفوظ است.
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
